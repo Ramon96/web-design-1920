@@ -73,4 +73,4 @@ function deviceRotation(event){
 
 }
 
-
+geluid.play();
