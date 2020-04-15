@@ -4,6 +4,8 @@ let button = document.querySelector("#permissionButton");
 let click = new Audio();
 click.play();
 
+let geluid = document.getElementById('myAudio');
+
 if(typeof(DeviceOrientationEvent) !== 'undefined' && typeof(DeviceOrientationEvent.requestPermission) === 'function'){
     //ios 13 device
       
@@ -28,8 +30,6 @@ if(typeof(DeviceOrientationEvent) !== 'undefined' && typeof(DeviceOrientationEve
     else{
      //non ios 13 device
      feedback.innerHTML = "This is not an ios13 device :(";
-     click.src = "../safe-click.mp3";
-click.play();
       
     }  
 
@@ -63,6 +63,7 @@ function deviceRotation(event){
        console.log(event.alpha.toFixed(0) % 5);
        click.src = "../safe-click.mp3";
        click.play();
+       geluid.play()
     }
 
 }
