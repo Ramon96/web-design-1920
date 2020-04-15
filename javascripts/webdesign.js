@@ -17,7 +17,9 @@ if(typeof(DeviceOrientationEvent) !== 'undefined' && typeof(DeviceOrientationEve
       .then(()=>{
         permissionGranted = true;
 
-        window.requestAnimationFrame(gyroscope);
+        window.addEventListener('deviceorientation', function(event) {
+            feedback.innerHTML = event.alpha + ' : ' + event.beta + ' : ' + event.gamma;
+          });
       })
       
     }
@@ -42,12 +44,12 @@ function requestAccess()
 
 }
 
-function gyroscope(timestamp){
+// function gyroscope(timestamp){
 
 
 
-    feedback.innerHTML = "gaat lekker "  +  rotationY + rotationX;
-    // feedback.innerHTML = "gaat lekker " ;
+//     feedback.innerHTML = "gaat lekker "  +  rotationY + rotationX;
+//     // feedback.innerHTML = "gaat lekker " ;
 
-    requestAnimationFrame(gyroscope);
-}
+//     requestAnimationFrame(gyroscope);
+// }
