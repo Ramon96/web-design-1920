@@ -16,7 +16,6 @@ if(typeof(DeviceOrientationEvent) !== 'undefined' && typeof(DeviceOrientationEve
       })
       .then(()=>{
         permissionGranted = true;
-
         window.addEventListener('deviceorientation', function(event) {
             feedback.innerHTML = event.alpha + ' : ' + event.beta + ' : ' + event.gamma;
           });
@@ -36,6 +35,10 @@ function requestAccess()
     .then(res => {
       if(res == 'granted'){
         permissionGranted = true;
+        
+        window.addEventListener('deviceorientation', function(event) {
+            feedback.innerHTML = event.alpha + ' : ' + event.beta + ' : ' + event.gamma;
+          });
       }else{
         permissionGranted = false;
       }
