@@ -17,7 +17,8 @@ if(typeof(DeviceOrientationEvent) !== 'undefined' && typeof(DeviceOrientationEve
       .then(()=>{
         permissionGranted = true;
         window.addEventListener('deviceorientation', function(event) {
-            feedback.innerHTML = event.alpha + ' : ' + event.beta + ' : ' + event.gamma;
+            // feedback.innerHTML = event.alpha + ' : ' + event.beta + ' : ' + event.gamma;
+            deviceRotation(event);
           });
       })
       
@@ -37,22 +38,20 @@ function requestAccess()
         permissionGranted = true;
         
         window.addEventListener('deviceorientation', function(event) {
-            feedback.innerHTML = event.alpha + ' : ' + event.beta + ' : ' + event.gamma;
+            // feedback.innerHTML = event.alpha + ' : ' + event.beta + ' : ' + event.gamma;
+            deviceRotation(event);
           });
       }else{
         permissionGranted = false;
       }
-  })
-  .catch(console.error);
+    })
+    .catch(console.error);
 
 }
 
-// function gyroscope(timestamp){
+function deviceRotation(event){
+    if(event.alpha.toFixed(0) % 5 == 0){
+        alert('maak een geluid');
+    }
 
-
-
-//     feedback.innerHTML = "gaat lekker "  +  rotationY + rotationX;
-//     // feedback.innerHTML = "gaat lekker " ;
-
-//     requestAnimationFrame(gyroscope);
-// }
+}
