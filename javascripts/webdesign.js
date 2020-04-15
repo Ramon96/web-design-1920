@@ -61,7 +61,7 @@ function deviceRotation(event){
     if(event.alpha.toFixed(0) % 5 == 0 && event.alpha.toFixed(0) !== oldValue){
     oldValue = event.alpha.toFixed(0);
        console.log(event.alpha.toFixed(0) % 5);
-       click.src = "../sounds/safe-click.mp3";
+       click.src = "../safe-click.mp3";
        click.play();
     }
 
