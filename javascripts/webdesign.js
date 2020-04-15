@@ -3,6 +3,8 @@ let feedback = document.querySelector("#feedback");
 let button = document.querySelector("#permissionButton");
 
 let geluid = document.getElementById('myAudio');
+let oldValue = 360;
+
 
 if(typeof(DeviceOrientationEvent) !== 'undefined' && typeof(DeviceOrientationEvent.requestPermission) === 'function'){
     //ios 13 device
@@ -53,7 +55,6 @@ function requestAccess()
 }
 
 function deviceRotation(event){
-    let oldValue = 360;
 
     feedback.innerHTML = event.alpha.toFixed(0);
     if(event.alpha.toFixed(0) % 5 == 0 && event.alpha.toFixed(0) !== oldValue){
