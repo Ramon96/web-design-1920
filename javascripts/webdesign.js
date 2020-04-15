@@ -47,6 +47,7 @@ function gyroscope(timestamp){
 
 
     feedback.innerHTML = "gaat lekker "  +  rotationY + rotationX;
+    // feedback.innerHTML = "gaat lekker " ;
 
-    window.requestAnimationFrame(step);
+    requestAnimationFrame(gyroscope);
 }
