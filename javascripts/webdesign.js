@@ -54,12 +54,11 @@ function requestAccess()
 
 function deviceRotation(event){
     let oldValue = 360;
-
+    let newValue = 360;
 
     feedback.innerHTML = event.alpha.toFixed(0);
     if(event.alpha.toFixed(0) % 5 == 0 && event.alpha.toFixed(0) !== oldValue){
     
-    oldValue = event.alpha.toFixed(0);
     //    console.log(event.alpha.toFixed(0) % 5);
        geluid.play();
 
@@ -69,6 +68,8 @@ function deviceRotation(event){
         console.log(oldValue)
     };
     }
+    oldValue = event.alpha.toFixed(0);
+
 
 }
 
