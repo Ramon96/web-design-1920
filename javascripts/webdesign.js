@@ -14,6 +14,7 @@ if(typeof(DeviceOrientationEvent) !== 'undefined' && typeof(DeviceOrientationEve
         //button die om permission vraagt
         button.addEventListener('click', function(){
             requestAccess();
+            geluid.play();
         })
 
       throw error;
@@ -73,4 +74,4 @@ function deviceRotation(event){
 
 }
 
-geluid.play();
+
