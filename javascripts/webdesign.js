@@ -32,7 +32,7 @@ function requestAccess()
 {
   DeviceOrientationEvent.requestPermission()
     .then(res => {
-      if(response == 'granted'){
+      if(res == 'granted'){
         permissionGranted = true;
       }else{
         permissionGranted = false;
