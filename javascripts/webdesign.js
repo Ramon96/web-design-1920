@@ -54,22 +54,20 @@ function requestAccess()
 
 function deviceRotation(event){
     let oldValue = 360;
-    let newValue = 360;
 
     feedback.innerHTML = event.alpha.toFixed(0);
     if(event.alpha.toFixed(0) % 5 == 0 && event.alpha.toFixed(0) !== oldValue){
     
+    oldValue = event.alpha.toFixed(0);
     //    console.log(event.alpha.toFixed(0) % 5);
        geluid.play();
 
        geluid.onended = function() {
         geluid.pause();
         geluid.currentTime = 0; // << only needed if you're cutting off the sound misstep (before the end) and need to return to the beginning - but you might need it. Since you are doing some gaming, I figured that might come up...
-        console.log(oldValue)
     };
-    }
-    oldValue = event.alpha.toFixed(0);
-
+}
+console.log(oldValue)
 
 }
 
