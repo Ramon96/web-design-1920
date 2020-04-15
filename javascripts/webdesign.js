@@ -28,7 +28,7 @@ if(typeof(DeviceOrientationEvent) !== 'undefined' && typeof(DeviceOrientationEve
     else{
      //non ios 13 device
      feedback.innerHTML = "This is not an ios13 device :(";
-     click.src = "../sounds/safe-click.mp3";
+     click.src = "../safe-click.mp3";
 click.play();
       
     }  
