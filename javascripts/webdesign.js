@@ -63,7 +63,12 @@ function deviceRotation(event){
        console.log(event.alpha.toFixed(0) % 5);
        click.src = "../safe-click.mp3";
        click.play();
-       geluid.play()
+       geluid.play();
+
+       geluid.onended = function() {
+        geluid.pause();
+        geluid.currentTime = 0; // << only needed if you're cutting off the sound misstep (before the end) and need to return to the beginning - but you might need it. Since you are doing some gaming, I figured that might come up...
+      };
     }
 
 }
