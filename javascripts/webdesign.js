@@ -50,10 +50,10 @@ function requestAccess()
 }
 
 function deviceRotation(event){
-    feedback.innerHTML = event.alpha.toFixed(0);
+    feedback.innerHTML = event.alpha.toFixed(0) + event.gamma.toFixed(0);
     if(event.alpha.toFixed(0) % 5 == 0){
 
-        alert('maak een geluid');
+       console.log(event.alpha.toFixed(0) % 5);
     }
 
 }
