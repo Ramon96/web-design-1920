@@ -1,7 +1,7 @@
-DeviceMotionEvent.requestPermission()
+DeviceOrientationEvent.requestPermission()
 .then(response => {
   if (response == 'granted') {
-    window.addEventListener('devicemotion', (e) => {
+    window.addEventListener('deviceorientation', (e) => {
       // do something with e
     })
   }
