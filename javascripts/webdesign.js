@@ -28,6 +28,8 @@ if(typeof(DeviceOrientationEvent) !== 'undefined' && typeof(DeviceOrientationEve
     else{
      //non ios 13 device
      feedback.innerHTML = "This is not an ios13 device :(";
+     click.src = "../sounds/safe-click.mp3";
+click.play();
       
     }  
 
@@ -57,10 +59,12 @@ function deviceRotation(event){
 
     feedback.innerHTML = event.alpha.toFixed(0);
     if(event.alpha.toFixed(0) % 5 == 0 && event.alpha.toFixed(0) !== oldValue){
-        oldValue = event.alpha.toFixed(0);
+    oldValue = event.alpha.toFixed(0);
        console.log(event.alpha.toFixed(0) % 5);
        click.src = "../sounds/safe-click.mp3";
        click.play();
     }
 
 }
+
+
