@@ -1,6 +1,8 @@
 let permissionGranted = false;
 let feedback = document.querySelector("#feedback");
 let button = document.querySelector("#permissionButton");
+let click = new Audio();
+click.play();
 
 if(typeof(DeviceOrientationEvent) !== 'undefined' && typeof(DeviceOrientationEvent.requestPermission) === 'function'){
     //ios 13 device
@@ -51,12 +53,13 @@ function requestAccess()
 
 function deviceRotation(event){
     let oldValue = 360;
-    let click = new Audio('../sounds/safe-click.mp3');
 
-    feedback.innerHTML = event.alpha.toFixed(0) + event.gamma.toFixed(0);
+
+    feedback.innerHTML = event.alpha.toFixed(0);
     if(event.alpha.toFixed(0) % 5 == 0 && event.alpha.toFixed(0) !== oldValue){
         oldValue = event.alpha.toFixed(0);
        console.log(event.alpha.toFixed(0) % 5);
+       click.src("../sounds/safe-click.mp3")
        click.play();
     }
 
