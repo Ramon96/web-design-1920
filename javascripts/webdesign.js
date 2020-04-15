@@ -50,10 +50,14 @@ function requestAccess()
 }
 
 function deviceRotation(event){
-    feedback.innerHTML = event.alpha.toFixed(0) + event.gamma.toFixed(0);
-    if(event.alpha.toFixed(0) % 5 == 0){
+    let oldValue = 360;
+    let click = new Audio('../sounds/safe-click.mp3');
 
+    feedback.innerHTML = event.alpha.toFixed(0) + event.gamma.toFixed(0);
+    if(event.alpha.toFixed(0) % 5 == 0 && event.alpha.toFixed(0) !== oldValue){
+        oldValue = event.alpha.toFixed(0);
        console.log(event.alpha.toFixed(0) % 5);
+       click.play();
     }
 
 }
