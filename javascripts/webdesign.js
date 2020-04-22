@@ -61,7 +61,7 @@ function deviceRotation(event){
 
   //alpha beta gamma
 
-    feedback.innerHTML = event.alpha.toFixed(0) + " " + event.gamma.toFixed(0);
+    feedback.innerHTML = "alpha: " +  event.alpha.toFixed(0) + " gamma: " + event.gamma.toFixed(0) + " beta: " + event.beta.toFixed(0);
 
     if(event.alpha.toFixed(0) % 5 == 0 && event.alpha.toFixed(0) !== oldValue){
     
