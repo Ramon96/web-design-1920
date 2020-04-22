@@ -6,10 +6,7 @@ let geluid = document.getElementById('myAudio');
 let oldValue = 360;
 
 
-// document.querySelector('#button3').addEventListener('click', function(){
-  
-//   playMessage('joo', "nl-NL");
-// })
+
 
 
 
@@ -21,8 +18,8 @@ if(typeof(DeviceOrientationEvent) !== 'undefined' && typeof(DeviceOrientationEve
         //button die om permission vraagt
         button.addEventListener('click', function(){
             requestAccess();
-    playMessage('joo', "nl-NL");
-
+            playMessage('joo', "nl-NL");
+            document.getElementsByTagName("th")[0].focus();
             geluid.play();
         })
 
@@ -35,13 +32,11 @@ if(typeof(DeviceOrientationEvent) !== 'undefined' && typeof(DeviceOrientationEve
             deviceRotation(event);
           });
       })
-      
     }
-    else{
-     //non ios 13 device
-     feedback.innerHTML = "This is not an ios13 device :(";
-      
-    }  
+else{
+  //non ios 13 device
+  feedback.innerHTML = "This is not an ios13 device :(";  
+}  
 
 
 function requestAccess()
@@ -60,7 +55,6 @@ function requestAccess()
       }
     })
     .catch(console.error);
-
 }
 
 function deviceRotation(event){

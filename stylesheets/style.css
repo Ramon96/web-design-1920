@@ -1,3 +1,8 @@
 button{
     font-size: 70px;
 }
+
+th:focus ,td:focus{
+    background: yellow;
+    color: red;
+}
