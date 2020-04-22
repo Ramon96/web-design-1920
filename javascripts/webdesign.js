@@ -86,7 +86,7 @@ function deviceRotation(event){
       // 0 naar 360 dan?
       if(event.alpha.toFixed(0) < oldValue){
         columnPos += 1
-        if(columnPos >= maxColumns){
+        if(columnPos > maxColumns){
           columnPos = 0;
           }
       }
