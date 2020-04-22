@@ -5,6 +5,20 @@ let button = document.querySelector("#permissionButton");
 let geluid = document.getElementById('myAudio');
 let oldValue = 360;
 
+playMessage('hallo', "nl-NL");
+
+function playMessage(message, locale){
+  var msg = new SpeechSynthesisUtterance();
+  msg.text = message;
+  msg.volume = 1; // 0 to 1
+
+  msg.rate = 1; // 0.1 to 9
+
+  msg.pitch = 1; // 0 to 2, 1=normal
+
+  msg.lang = locale ;//"en-US";
+  speechSynthesis.speak(msg);
+}
 
 if(typeof(DeviceOrientationEvent) !== 'undefined' && typeof(DeviceOrientationEvent.requestPermission) === 'function'){
     //ios 13 device
