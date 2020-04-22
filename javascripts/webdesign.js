@@ -21,7 +21,7 @@ if(typeof(DeviceOrientationEvent) !== 'undefined' && typeof(DeviceOrientationEve
         button.addEventListener('click', function(){
             requestAccess();
             playMessage('joo', "nl-NL");
-            geluid.play();
+            // geluid.play();
         })
 
       throw error;
@@ -80,9 +80,6 @@ function deviceRotation(event){
   }*/ 
   if(event.alpha.toFixed(0) % 10 == 0 && event.alpha.toFixed(0) !== oldValue){
 
-    
-
-
       // 0 naar 360 dan?
       if(event.alpha.toFixed(0) < oldValue){
         columnPos += 1
@@ -113,14 +110,23 @@ console.log(document.getElementsByTagName("tr")[1].children.length)
 console.log(document.getElementsByTagName("tbody")[0].children.length)
 
 
+console.log(document.getElementsByTagName("tr")[0].children[0].innerHTML)
+
 function focusTable(){
   document.getElementsByTagName("tr")[rowPos].children[columnPos].focus();
+  window.speechSynthesis.cancel();
+  playMessage(document.getElementsByTagName("tr")[rowPos].children[columnPos].innerHTML, "nl-NL");
 }
 
 
 function playMessage(message, locale){
   var msg = new SpeechSynthesisUtterance(message);
-  msg.text = message;
+
+  let value = document.getElementsByTagName("tr")[0].children[columnPos].innerHTML;
+  let rowVal = document.getElementsByTagName("tr")[rowPos].children[0].innerHTML
+
+
+  msg.text = rowVal + value + message;
   msg.volume = 1; // 0 to 1
 
   msg.rate = 1; // 0.1 to 9
