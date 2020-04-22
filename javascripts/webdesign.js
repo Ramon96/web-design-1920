@@ -92,7 +92,7 @@ function deviceRotation(event){
 
 }
 
-document.getElementsByTagName("th")[1].focus();
+// document.getElementsByTagName("tr")[2].children[2].focus();
 
 console.log(document.getElementsByTagName("tr")[1].children[2].innerHTML)
 console.log(document.getElementsByTagName("tr")[1].children.length)
