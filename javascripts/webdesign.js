@@ -82,7 +82,7 @@ function deviceRotation(event){
     if(columnPos >= maxColumns){
       columnPos = 0;
       }
-    }
+    
     else if(columnPos <= -1){
       columnPos = maxColumns;
     }
