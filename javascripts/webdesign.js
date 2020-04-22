@@ -100,7 +100,7 @@ console.log(document.getElementsByTagName("tbody")[0].children.length)
 
 
 function focusTable(){
-  document.getElementsByTagName("tr")[rowPos].children[columnPos].innerHTML
+  document.getElementsByTagName("tr")[rowPos].children[columnPos].focus();
 }
 
 
