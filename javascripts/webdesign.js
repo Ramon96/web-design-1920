@@ -79,26 +79,28 @@ function deviceRotation(event){
     // };
   }*/ 
   if(event.alpha.toFixed(0) % 10 == 0 && event.alpha.toFixed(0) !== oldValue){
-    if(columnPos >= maxColumns){
-      columnPos = 0;
-      }
+
     
-    else if(columnPos <= -1){
-      columnPos = maxColumns;
-    }
-    else{
+
+
       // 0 naar 360 dan?
       if(event.alpha.toFixed(0) < oldValue){
         columnPos += 1
+        if(columnPos >= maxColumns){
+          columnPos = 0;
+          }
       }
       else{
-        alert(columnPos + " er moet er 1 af")
+
         columnPos -= 1
+        if(columnPos <= -1){
+          columnPos = maxColumns;
+        }
       }
     }
     oldValue = event.alpha.toFixed(0);
     focusTable();
-  }
+  
 
 // console.log(oldValue)
 
