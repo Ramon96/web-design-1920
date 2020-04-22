@@ -101,12 +101,14 @@ function deviceRotation(event){
 
   if(event.beta.toFixed(0) <= -10 && oldBeta == 0){
    // omhoog
+
    oldBeta = 1;
 
-   rowPos += 1;
-   if(rowPos > maxRows){
-    rowPos = 1;
-  }
+   rowPos -= 1;
+   if(rowPos <= 0){
+     rowPos = maxRows;
+   }
+
 
 
    focusTable();
@@ -115,10 +117,13 @@ function deviceRotation(event){
     // omlaag
     oldBeta = 1;
 
-    rowPos -= 1;
-    if(rowPos <= 0){
-      rowPos = maxRows;
-    }
+    rowPos += 1;
+    if(rowPos > maxRows){
+     rowPos = 1;
+   }
+ 
+
+
     focusTable(); 
   }
   else if(event.beta.toFixed(0) >= 0 && event.beta.toFixed(0) <= 3){
