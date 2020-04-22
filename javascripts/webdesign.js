@@ -62,7 +62,7 @@ function deviceRotation(event){
 
   //alpha beta gamma
 
-    feedback.innerHTML = "alpha: " +  event.alpha.toFixed(0) + " gamma: " + event.gamma.toFixed(0) + " beta: " + event.beta.toFixed(0);
+    feedback.innerHTML = "alpha: " +  event.alpha.toFixed(0) + " gamma: " + event.gamma.toFixed(0) + " beta: " + event.beta.toFixed(0) + " oldvalue: " + oldValue;
 
   /*if(event.alpha.toFixed(0) % 5 == 0 && event.alpha.toFixed(0) !== oldValue){
     
@@ -80,15 +80,14 @@ function deviceRotation(event){
   }*/ 
   if(event.alpha.toFixed(0) % 10 == 0 && event.alpha.toFixed(0) !== oldValue){
     if(columnPos >= maxColumns){
-      if(event.alpha.toFixed(0) < oldValue){
       columnPos = 0;
       }
-      else{
+    }
+    else if(columnPos <= -1){
       columnPos = maxColumns;
-
-      }
     }
     else{
+      // 0 naar 360 dan?
       if(event.alpha.toFixed(0) < oldValue){
         columnPos += 1
       }
