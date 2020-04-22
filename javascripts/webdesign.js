@@ -120,11 +120,11 @@ function focusTable(){
 
 
 function playMessage(message, locale){
+  
+    let value = document.getElementsByTagName("tr")[0].children[columnPos].innerHTML;
+    let rowVal = document.getElementsByTagName("tr")[rowPos].children[0].innerHTML
   let spreek = rowVal +  " " + value +  " " + message
   var msg = new SpeechSynthesisUtterance(spreek);
-
-  let value = document.getElementsByTagName("tr")[0].children[columnPos].innerHTML;
-  let rowVal = document.getElementsByTagName("tr")[rowPos].children[0].innerHTML
 
   console.log(value +  " " + rowVal + " " + message)
 
