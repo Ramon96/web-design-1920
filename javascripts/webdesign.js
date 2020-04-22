@@ -120,13 +120,14 @@ function focusTable(){
 
 
 function playMessage(message, locale){
-  var msg = new SpeechSynthesisUtterance(message);
+  var msg = new SpeechSynthesisUtterance();
 
   let value = document.getElementsByTagName("tr")[0].children[columnPos].innerHTML;
   let rowVal = document.getElementsByTagName("tr")[rowPos].children[0].innerHTML
 
+  console.log(value +  " " + rowVal + " " + message)
 
-  msg.text = rowVal + value + message;
+  msg.text = rowVal +  " " + value +  " " + message;
   msg.volume = 1; // 0 to 1
 
   msg.rate = 1; // 0.1 to 9
