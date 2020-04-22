@@ -121,7 +121,7 @@ function deviceRotation(event){
     }
     focusTable(); 
   }
-  else if(oldBeta > 0 && oldBeta < 3){
+  else if(event.beta.toFixed(0) >= 0 && event.beta.toFixed(0) <= 3){
     oldBeta = 0;
   }
   
