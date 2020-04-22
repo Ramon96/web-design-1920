@@ -17,6 +17,19 @@
         <source src="safe-click.mp3" type="audio/mpeg">
 
       </audio>
+
+
+
+      <button id="dit is een test" onclick=speak(id)>het zou geweldig zijn als dit werkt</button>
+
+      <script >
+        function speak(text) {
+            var msg    = new SpeechSynthesisUtterance(text);
+            msg.lang = 'nl-NL';
+            window.speechSynthesis.speak(msg);
+        }
+    </script>
+
     <p>Prototype version 1.0.0</p>
     
     <script src="javascripts/webdesign.js"></script>
