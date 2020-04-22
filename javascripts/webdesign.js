@@ -84,7 +84,7 @@ function deviceRotation(event){
       if(event.alpha.toFixed(0) < oldValue){
         columnPos += 1
         if(columnPos > maxColumns){
-          columnPos = 0;
+          columnPos = 1;
           }
       }
       else{
@@ -94,9 +94,9 @@ function deviceRotation(event){
           columnPos = maxColumns;
         }
       }
+      oldValue = event.alpha.toFixed(0);
+      focusTable();
     }
-    oldValue = event.alpha.toFixed(0);
-    focusTable();
   
 
 // console.log(oldValue)
