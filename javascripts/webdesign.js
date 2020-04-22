@@ -71,7 +71,7 @@ function deviceRotation(event){
     oldValue = event.alpha.toFixed(0);
     //    console.log(event.alpha.toFixed(0) % 5);
 
-    playMessage('gaat goed', "nl-NL");
+    playMessage(oldValue, "nl-NL");
 
       //  geluid.play();
 
@@ -80,7 +80,7 @@ function deviceRotation(event){
       //   geluid.currentTime = 0; 
     // };
 }
-console.log(oldValue)
+// console.log(oldValue)
 
 }
 
