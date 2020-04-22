@@ -6,10 +6,10 @@ let geluid = document.getElementById('myAudio');
 let oldValue = 360;
 
 
-document.querySelector('#button3').addEventListener('click', function(){
+// document.querySelector('#button3').addEventListener('click', function(){
   
-  playMessage('joo', "nl-NL");
-})
+//   playMessage('joo', "nl-NL");
+// })
 
 function playMessage(message, locale){
   var msg = new SpeechSynthesisUtterance(message);
