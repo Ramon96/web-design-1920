@@ -3,7 +3,8 @@ let feedback = document.querySelector("#feedback");
 let button = document.querySelector("#permissionButton");
 
 let geluid = document.getElementById('myAudio');
-let oldValue = 360;
+let oldAlpha = 360;
+let oldBeta = 0;
 
 let columnPos = 0;
 let maxColumns = document.getElementsByTagName("tr")[1].children.length - 1;
@@ -20,7 +21,7 @@ if(typeof(DeviceOrientationEvent) !== 'undefined' && typeof(DeviceOrientationEve
         //button die om permission vraagt
         button.addEventListener('click', function(){
             requestAccess();
-            playMessage('joo', "nl-NL");
+            introductionMessage('Leg uw mobiele telefoon plat op tafel en roteer je telefoon om links en rechts in de tabel te gaan. kantel je telefoon om omhoog en omlaag in de tabel te gaan.', "nl-NL");
             // geluid.play();
         })
 
@@ -62,14 +63,14 @@ function deviceRotation(event){
 
   //alpha beta gamma
 
-    feedback.innerHTML = "alpha: " +  event.alpha.toFixed(0) + " gamma: " + event.gamma.toFixed(0) + " beta: " + event.beta.toFixed(0) + " oldvalue: " + oldValue;
+    feedback.innerHTML = "alpha: " +  event.alpha.toFixed(0) + " gamma: " + event.gamma.toFixed(0) + " beta: " + event.beta.toFixed(0) + " oldAlpha: " + oldAlpha;
 
-  /*if(event.alpha.toFixed(0) % 5 == 0 && event.alpha.toFixed(0) !== oldValue){
+  /*if(event.alpha.toFixed(0) % 5 == 0 && event.alpha.toFixed(0) !== oldAlpha){
     
-    oldValue = event.alpha.toFixed(0);
+    oldAlpha = event.alpha.toFixed(0);
     //    console.log(event.alpha.toFixed(0) % 5);
     window.speechSynthesis.cancel();
-    playMessage(oldValue, "nl-NL");
+    playMessage(oldAlpha, "nl-NL");
 
       //  geluid.play();
 
@@ -78,10 +79,10 @@ function deviceRotation(event){
       //   geluid.currentTime = 0; 
     // };
   }*/ 
-  if(event.alpha.toFixed(0) % 10 == 0 && event.alpha.toFixed(0) !== oldValue){
+  if(event.alpha.toFixed(0) % 10 == 0 && event.alpha.toFixed(0) !== oldAlpha){
 
       // 0 naar 360 dan?
-      if(event.alpha.toFixed(0) < oldValue){
+      if(event.alpha.toFixed(0) < oldAlpha){
         columnPos += 1
         if(columnPos > maxColumns){
           columnPos = 1;
@@ -94,12 +95,12 @@ function deviceRotation(event){
           columnPos = maxColumns;
         }
       }
-      oldValue = event.alpha.toFixed(0);
+      oldAlpha = event.alpha.toFixed(0);
       focusTable();
     }
   
 
-// console.log(oldValue)
+// console.log(oldAlpha)
 
 }
 
@@ -118,11 +119,25 @@ function focusTable(){
   playMessage(document.getElementsByTagName("tr")[rowPos].children[columnPos].innerHTML, "nl-NL");
 }
 
+function introductionMessage(message, locale){
+
+  var msg = new SpeechSynthesisUtterance(message);
+
+  msg.text = message;
+  msg.volume = 1; // 0 to 1
+
+  msg.rate = 1; // 0.1 to 9
+
+  msg.pitch = 1; // 0 to 2, 1=normal
+
+  msg.lang = locale ;//"en-US";
+  window.speechSynthesis.speak(msg);
+} 
 
 function playMessage(message, locale){
   
-    let value = document.getElementsByTagName("tr")[0].children[columnPos].innerHTML;
-    let rowVal = document.getElementsByTagName("tr")[rowPos].children[0].innerHTML
+  let value = document.getElementsByTagName("tr")[0].children[columnPos].innerHTML;
+  let rowVal = document.getElementsByTagName("tr")[rowPos].children[0].innerHTML
   let spreek = rowVal +  " " + value +  " " + message
   var msg = new SpeechSynthesisUtterance(spreek);
 
