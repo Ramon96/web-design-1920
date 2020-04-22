@@ -79,6 +79,7 @@ function deviceRotation(event){
     // };
   }*/ 
   if(event.alpha.toFixed(0) % 5 == 0 && event.alpha.toFixed(0) !== oldValue){
+    oldValue = event.alpha.toFixed(0);
     if(columnPos >= maxColumns){
       columnPos = 1;
     }
