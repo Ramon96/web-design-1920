@@ -11,18 +11,7 @@ let oldValue = 360;
 //   playMessage('joo', "nl-NL");
 // })
 
-function playMessage(message, locale){
-  var msg = new SpeechSynthesisUtterance(message);
-  msg.text = message;
-  msg.volume = 1; // 0 to 1
 
-  msg.rate = 1; // 0.1 to 9
-
-  msg.pitch = 1; // 0 to 2, 1=normal
-
-  msg.lang = locale ;//"en-US";
-  window.speechSynthesis.speak(msg);
-}
 
 if(typeof(DeviceOrientationEvent) !== 'undefined' && typeof(DeviceOrientationEvent.requestPermission) === 'function'){
     //ios 13 device
@@ -32,6 +21,8 @@ if(typeof(DeviceOrientationEvent) !== 'undefined' && typeof(DeviceOrientationEve
         //button die om permission vraagt
         button.addEventListener('click', function(){
             requestAccess();
+    playMessage('joo', "nl-NL");
+
             geluid.play();
         })
 
@@ -80,7 +71,7 @@ function deviceRotation(event){
     oldValue = event.alpha.toFixed(0);
     //    console.log(event.alpha.toFixed(0) % 5);
 
-    playMessage('joo', "nl-NL");
+    playMessage('gaat goed', "nl-NL");
 
       //  geluid.play();
 
@@ -94,3 +85,15 @@ console.log(oldValue)
 }
 
 
+function playMessage(message, locale){
+  var msg = new SpeechSynthesisUtterance(message);
+  msg.text = message;
+  msg.volume = 1; // 0 to 1
+
+  msg.rate = 1; // 0.1 to 9
+
+  msg.pitch = 1; // 0 to 2, 1=normal
+
+  msg.lang = locale ;//"en-US";
+  window.speechSynthesis.speak(msg);
+}
