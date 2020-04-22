@@ -70,7 +70,7 @@ function deviceRotation(event){
     
     oldValue = event.alpha.toFixed(0);
     //    console.log(event.alpha.toFixed(0) % 5);
-
+    window.speechSynthesis.cancel();
     playMessage(oldValue, "nl-NL");
 
       //  geluid.play();
