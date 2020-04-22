@@ -8,7 +8,7 @@ let oldValue = 360;
 playMessage('hallo', "nl-NL");
 
 function playMessage(message, locale){
-  var msg = new SpeechSynthesisUtterance();
+  var msg = new SpeechSynthesisUtterance(message);
   msg.text = message;
   msg.volume = 1; // 0 to 1
 
