@@ -17,7 +17,7 @@ function playMessage(message, locale){
   msg.pitch = 1; // 0 to 2, 1=normal
 
   msg.lang = locale ;//"en-US";
-  speechSynthesis.speak(msg);
+  window.speechSynthesis.speak(msg);
 }
 
 if(typeof(DeviceOrientationEvent) !== 'undefined' && typeof(DeviceOrientationEvent.requestPermission) === 'function'){
