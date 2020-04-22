@@ -87,7 +87,7 @@ function deviceRotation(event){
       //  geluid.onended = function() {
       //   geluid.pause();
       //   geluid.currentTime = 0; 
-    };
+    // };
 }
 console.log(oldValue)
 
