@@ -59,7 +59,10 @@ function requestAccess()
 
 function deviceRotation(event){
 
-    feedback.innerHTML = event.alpha.toFixed(0);
+  //alpha beta gamma
+
+    feedback.innerHTML = event.alpha.toFixed(0) + " " + event.gamma.toFixed(0);
+
     if(event.alpha.toFixed(0) % 5 == 0 && event.alpha.toFixed(0) !== oldValue){
     
     oldValue = event.alpha.toFixed(0);
