@@ -91,7 +91,7 @@ function deviceRotation(event){
       if(event.alpha.toFixed(0) < oldValue){
         columnPos += 1
       }
-      else{
+      else if(event.alpha.toFixed(0) > oldValue){
         columnPos -= 1
       }
     }
