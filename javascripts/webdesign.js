@@ -5,8 +5,10 @@ let button = document.querySelector("#permissionButton");
 let geluid = document.getElementById('myAudio');
 let oldValue = 360;
 
-
-
+let columnPos = 0;
+let maxColumns = document.getElementsByTagName("tr")[1].children.length;
+let rowPos = 0;
+let maxRows = document.getElementsByTagName("tbody")[0].children.length;
 
 
 
@@ -19,7 +21,6 @@ if(typeof(DeviceOrientationEvent) !== 'undefined' && typeof(DeviceOrientationEve
         button.addEventListener('click', function(){
             requestAccess();
             playMessage('joo', "nl-NL");
-            document.getElementsByTagName("th")[0].focus();
             geluid.play();
         })
 
@@ -63,7 +64,7 @@ function deviceRotation(event){
 
     feedback.innerHTML = "alpha: " +  event.alpha.toFixed(0) + " gamma: " + event.gamma.toFixed(0) + " beta: " + event.beta.toFixed(0);
 
-    if(event.alpha.toFixed(0) % 5 == 0 && event.alpha.toFixed(0) !== oldValue){
+  /*if(event.alpha.toFixed(0) % 5 == 0 && event.alpha.toFixed(0) !== oldValue){
     
     oldValue = event.alpha.toFixed(0);
     //    console.log(event.alpha.toFixed(0) % 5);
@@ -76,9 +77,30 @@ function deviceRotation(event){
       //   geluid.pause();
       //   geluid.currentTime = 0; 
     // };
-}
+  }*/ 
+  if(event.alpha.toFixed(0) % 5 == 0 && event.alpha.toFixed(0) !== oldValue){
+    if(columnPos >= maxColumns){
+      columnPos = 1;
+    }
+    else{
+      columnPos += 1
+    }
+    focusTable();
+  }
+
 // console.log(oldValue)
 
+}
+
+document.getElementsByTagName("th")[1].focus();
+
+console.log(document.getElementsByTagName("tr")[1].children[2].innerHTML)
+console.log(document.getElementsByTagName("tr")[1].children.length)
+console.log(document.getElementsByTagName("tbody")[0].children.length)
+
+
+function focusTable(){
+  document.getElementsByTagName("tr")[rowPos].children[columnPos].innerHTML
 }
 
 
