@@ -6,9 +6,9 @@ let geluid = document.getElementById('myAudio');
 let oldValue = 360;
 
 let columnPos = 0;
-let maxColumns = document.getElementsByTagName("tr")[1].children.length;
-let rowPos = 0;
-let maxRows = document.getElementsByTagName("tbody")[0].children.length;
+let maxColumns = document.getElementsByTagName("tr")[1].children.length - 1;
+let rowPos = 1;
+let maxRows = document.getElementsByTagName("tbody")[0].children.length - 1;
 
 
 
@@ -78,14 +78,25 @@ function deviceRotation(event){
       //   geluid.currentTime = 0; 
     // };
   }*/ 
-  if(event.alpha.toFixed(0) % 5 == 0 && event.alpha.toFixed(0) !== oldValue){
-    oldValue = event.alpha.toFixed(0);
+  if(event.alpha.toFixed(0) % 10 == 0 && event.alpha.toFixed(0) !== oldValue){
     if(columnPos >= maxColumns){
-      columnPos = 1;
+      if(event.alpha.toFixed(0) < oldValue){
+      columnPos = 0;
+      }
+      else{
+      columnPos = maxColumns;
+
+      }
     }
     else{
-      columnPos += 1
+      if(event.alpha.toFixed(0) < oldValue){
+        columnPos += 1
+      }
+      else{
+        columnPos -= 1
+      }
     }
+    oldValue = event.alpha.toFixed(0);
     focusTable();
   }
 
