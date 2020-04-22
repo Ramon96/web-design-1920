@@ -5,7 +5,11 @@ let button = document.querySelector("#permissionButton");
 let geluid = document.getElementById('myAudio');
 let oldValue = 360;
 
-playMessage('hallo', "nl-NL");
+
+document.querySelector('#button3').addEventListener('click', function(){
+  
+  playMessage('joo', "nl-NL");
+})
 
 function playMessage(message, locale){
   var msg = new SpeechSynthesisUtterance(message);
@@ -75,11 +79,14 @@ function deviceRotation(event){
     
     oldValue = event.alpha.toFixed(0);
     //    console.log(event.alpha.toFixed(0) % 5);
-       geluid.play();
 
-       geluid.onended = function() {
-        geluid.pause();
-        geluid.currentTime = 0; // << only needed if you're cutting off the sound misstep (before the end) and need to return to the beginning - but you might need it. Since you are doing some gaming, I figured that might come up...
+    playMessage('joo', "nl-NL");
+
+      //  geluid.play();
+
+      //  geluid.onended = function() {
+      //   geluid.pause();
+      //   geluid.currentTime = 0; 
     };
 }
 console.log(oldValue)
