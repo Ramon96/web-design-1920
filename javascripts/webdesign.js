@@ -4,7 +4,7 @@ let button = document.querySelector("#permissionButton");
 
 let geluid = document.getElementById('myAudio');
 let oldAlpha = 360;
-let oldBeta = 0;
+
 
 let columnPos = 0;
 let maxColumns = document.getElementsByTagName("tr")[1].children.length - 1;
@@ -63,7 +63,7 @@ function deviceRotation(event){
 
   //alpha beta gamma
 
-    feedback.innerHTML = "alpha: " +  event.alpha.toFixed(0) + " gamma: " + event.gamma.toFixed(0) + " beta: " + event.beta.toFixed(0) + " oldAlpha: " + oldAlpha;
+    feedback.innerHTML = "alpha: " +  event.alpha.toFixed(0) + " gamma: " + event.gamma.toFixed(0) + " beta: " + event.beta.toFixed(0) + " oldAlpha: " + oldAlpha + " oldBeta: " + oldBeta;
 
   /*if(event.alpha.toFixed(0) % 5 == 0 && event.alpha.toFixed(0) !== oldAlpha){
     
@@ -97,13 +97,39 @@ function deviceRotation(event){
       }
       oldAlpha = event.alpha.toFixed(0);
       focusTable();
+  }
+
+  if(event.beta.toFixed(0) <= -10 && oldBeta == 0){
+   // omhoog
+   oldBeta = 1;
+
+   rowPos += 1;
+   if(rowPos > maxRows){
+    rowPos = 1;
+  }
+
+
+   focusTable();
+  }
+  else if(event.beta.toFixed(0) >= 10 && oldBeta == 0){
+    // omlaag
+    oldBeta = 1;
+
+    rowPos -= 1;
+    if(rowPos <= 0){
+      rowPos = maxRows;
     }
+    focusTable(); 
+  }
+  else if(oldBeta > 0 && oldBeta < 3){
+    oldBeta = 0;
+  }
   
 
 // console.log(oldAlpha)
 
 }
-
+let oldBeta = 0;
 // document.getElementsByTagName("tr")[2].children[2].focus();
 
 console.log(document.getElementsByTagName("tr")[1].children[2].innerHTML)
