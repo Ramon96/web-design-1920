@@ -33,7 +33,7 @@ De iphone verleent niet zomaar toegang tot de gyroscope. Je moet eerst toestemmi
 
 Ik had een prototype gemaakt wat een geluid maakt elke 5 graden dat je je telefoon maakt, ik wilde testen of dit werkt en of Roger dit begin concept leuk vind.
 
-## De eerste test
+### De test
 Tijdens de eerste test zag ik veel opvallende zaken. Een van de dingen die me opviel was dat kleine knoppen niet makkelijk te bedienen zijn. ( Dus ik had stiekem heel snel mijn knop die om toestemming vraagt heel groot gemaakt).
 
 Wat me verder opviel is dat veel mede studenten probeerde het kleine beetje zicht van Roger te gebruiken. Dit kost Roger veel energie en je kon ook wel aan hem zien dat hij dit eigenlijk niet zo fijn vond. Hij wilt liever met zijn screenreader aan de gang gaan. Ook merkte ik dat Roger het heel belangrijk vind dat de data betrouwbaar is en dat hij liever niet naar onzin data kijkt. (Hij vind het niet erg als het even vermeld word dat de data waar hij naar kijkt niet echt is, maar soms vergeten studenten dat aan te geven). 
@@ -43,9 +43,9 @@ Terwijl Roger mijn prototypen aan het testen was begonnen de buren te klussen. E
 
 Verder zag ik dat Roger het wel leuk vond om te zien dat ik out of the box had nagedacht en dat hij best benieuwd was wat hier verder uit zou komen.
 
-## Conclussie:
+### Conclussie:
 Bewegen met de telefoon vond hij erg leuk, hij vond het leuk dat ik vanuit het perspectief van een beeldhouder heb gedacht (werken met handen). Geluid als feedback werkt niet zo goed, als de buren aan het klussen zijn kan Roger de applicatie niet gebruiken.
 
 Ik had nog gekeken of het mogelijk om geluid te vervangen met trillen maar word dat helaas niet goed ondersteund: https://caniuse.com/#feat=vibration. En heb ik in tegenstelling tot koen geen extra Android in huis liggen. Ik beschouw dit dan ook als een Con en ga hier niet omheen proberen te ontwerpen. (Roger zou in theorie ook een koptelefoon kunenn gebruiken)
 
-## De tweede test
+### De tweede iteratie
