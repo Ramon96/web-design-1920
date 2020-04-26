@@ -19,6 +19,17 @@ navigeer in het project
 cd web-design-1920
 `
 
+## User scenario 
+
+Frank is 49 jaar en komt net van het ziekenhuis. Frank met het centrale punt van zijn ogen niet meer zien. Hij heeft net van het ziekenhuis te horen gekregen dat hij binnenkort helemaal niets meer kan zien. 
+
+Er is momenteel Corona in Nederland. Frank volgt de stand van zaken door naar corona tabellen te kijken. Frank is bang dat hij binnenkort deze tabellen niet meer kan aflezen. Daarom probeert Frank een screenreader te gebruiken om door het web te navigeren. 
+
+Het valt frank op dat het heel moeilijk is omdoormiddel van een screenreader door het web te navigeren, niet alle website zijn op zijn screenreader geoptimalizeerd. Op zijn mobiele telefoon gebruikt Frank Siri om spraak aan en uit te zetten en kan hij zijn mobiele telefoon daardoor nog bedienen.
+
+Gelukkig kan Frank doormiddel van een onzichtbare datavisualisatie nog steeds op de hoogte blijven van de laatste corona cijfers.
+
+
 ## De ontmoeting met Roger Ravelli
 8 april hebben we als **Team Roger** Roger ontmoet. Roger is een hele aardig man van in de 53. 
 Roger zijn leven is niet altijd even mooi geweest, op een goed moment had hij het idee dat zijn bril niet meer even scherp is als hij vond dat het zou moeten zijn. Hij is toen naar de opticien geweest. De opticien heeft hem meteen naar het ziekenhuis doorverwezen. Daar is Roger erachter gekomen dat hij een ziekte heeft waardoor hij steeds minder door kan zien. Op een gegeven moment zelfs blind Dit komt door een kapot netvlies in zijn ogen. Roger leert sinds kort hoe he met een screenreader aan de gang kan gaan. Wij hebben vanuit school de kans gekregen om Roger te helpen en om iets voor hem te ontwerpen waardoor hij gebruik kan maken van een Data visualisatie. 
