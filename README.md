@@ -48,7 +48,7 @@ Bewegen met de telefoon vond hij erg leuk, hij vond het leuk dat ik vanuit het p
 
 Ik had nog gekeken of het mogelijk om geluid te vervangen met trillen maar word dat helaas niet goed ondersteund: https://caniuse.com/#feat=vibration. En heb ik in tegenstelling tot koen geen extra Android in huis liggen. Ik beschouw dit dan ook als een Con en ga hier niet omheen proberen te ontwerpen. (Roger zou in theorie ook een koptelefoon kunenn gebruiken)
 
-### De tweede iteratie
+## De tweede iteratie
 Nu heb ik gezien dat de sensoren van een mobiele telefoon goed in de smaak vielen ben ik er verder in gaan ittereren.
 ik heb eerst goed na zitten denken hoe tabel waardes zou kunnen achterhalen doormiddel van geluid. Ik zat eerst te denken in de richting van hoge en lage tonen maar dat zegt eigenlijk nog steeds niet zoveel. Toen zat ik te denken aan een speechAPi. Hoe meer ik hier over na dacht hoe logischer het voor mij is. Het word goed ondersteund en ik zou de api kunnen gebruiken om uitleg te kunnen geven. 
 
@@ -56,7 +56,7 @@ De volgende stap is dat ik een tabel zou kunnen bedienen doormiddel van sensoren
 
 Om het helemaal af te ronden worden de cellen voorgelezen en heb ik een introductie text toegevoegd die uitlegd geeft.
 
-## De test
+### De test
 Deze keer doe ik de test net wat anders. Ik wil de kennis toepassen die ik in de college heb gekregen. 
 Ik was als een van de laatste aan de beurt en ik kon me goed voorstellen dat Roger er ook een beetje doorheen zat. Ik vraag hem daarom gewoon: Hoe gaat het? Heb je nog leuke dingen gezien? 
 Roger vond dit leuk, gewoon ff eruit. Ff van die focus af. We zijn tenslotten iets leuks voor hem aan het maken, Roger is niet voor ons aan het werk maar wij voor hem. 
@@ -65,7 +65,7 @@ Na het leuke koetjes en kalfjes fase ga ik over naar de "Recap". Ik vertel Roger
 
 Wanneer Roger ergens niet uitkomt vraag ik Roger wat hij denkt wat er van hem gevraagd word. Ik moedig hem aan om hem hardop te denken wat mij veel interessante aandachtspunten opleverd. 
 
-## Conclussie. 
+### Conclussie. 
 - Roger kwam er in het begin niet helemaal uit, er was in mijn applicatie nog geen duidelijke flow.
 - Ik heb toestemming nodig om de gyroscope te kunnen gebruiken, dat doe ik doormiddel van een allow button, deze button was nog niet helemaal duidelijk.
 - De applicatie werkt ook niet helemaal soepel voor terugkomende bezoekers.
@@ -76,3 +76,5 @@ Wanneer Roger ergens niet uitkomt vraag ik Roger wat hij denkt wat er van hem ge
 Al met al vond Roger het prachtig om te zien, het is even wat anders dan de screenreader tabellen die hij veel gezien heeft. of iemand die het met contrast probeert op te lossen. Roger noemt het "Orgineel en bevinding rijkelijk" En daar ben ik al heel blij mee. 
 
 Ik merk dat deze manier van testen veel effectiever is in vergelijking met mijn eerste test. Ik leer tijdens dit vak over exclusive design, maar ik leer ook hoe je moet testen. En dat laatste is misshcien wel het meest nuttig omdat je dat in elke situatie kan toepassen om je concept te versterken.
+
+## De laatste itteratie
