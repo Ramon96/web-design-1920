@@ -105,3 +105,10 @@ Al met al vond Roger het prachtig om te zien, het is even wat anders dan de scre
 Ik merk dat deze manier van testen veel effectiever is in vergelijking met mijn eerste test. Ik leer tijdens dit vak over exclusive design, maar ik leer ook hoe je moet testen. En dat laatste is misschien wel het meest nuttig, omdat je dat in elke situatie kan toepassen om je concept te versterken.
 
 ## De laatste iteratie
+
+
+## Exclusive Design Principles
+### Study situation
+### Ignore conventions
+### Prioritise identity
+### Add nonsense
