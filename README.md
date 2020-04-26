@@ -1,7 +1,23 @@
+# Onzichtbare datavisualisatie
+Rapid prototypen en testen met echte mensen
+
+## Live demo 
+[https://webdesign-ramon.netlify.app/](https://webdesign-ramon.netlify.app/) (Ios13 Iphone demo)
+
+
+## build Status
 [![Netlify Status](https://api.netlify.com/api/v1/badges/70e8c292-b24c-4507-b5c6-d77aa6083cb7/deploy-status)](https://app.netlify.com/sites/webdesign-ramon/deploys)
 
-# Web Design @cmda-minor-web 1920
-//Interactie ontwerpen: Rapid prototypen en testen met echte mensen
+## Installatie
+Clone het project
+`
+git clone https://github.com/Ramon96/web-design-1920.git
+`
+
+navigeer in het project
+`
+cd web-design-1920
+`
 
 ## De ontmoeting met Roger Ravelli
 8 April hebben we als **Team Roger** Roger ontmoet. Roger is een hele aardig man van in de 53. 
