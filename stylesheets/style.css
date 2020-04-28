@@ -24,3 +24,10 @@ table{
     top: 0;
     /* z-index: -1; */
 }
+
+#feedback{
+    position: fixed;
+    top: 2em;
+    right: 2em;
+    text-align: right;
+}
