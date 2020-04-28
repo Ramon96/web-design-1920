@@ -37,7 +37,10 @@ if(typeof(DeviceOrientationEvent) !== 'undefined' && typeof(DeviceOrientationEve
     }
 else{
   //non ios 13 device
-  feedback.innerHTML = "This is not an ios13 device :(";  
+  // feedback.innerHTML = "This is not an ios13 device :(";  
+  introductionMessage('Deze applicatie word alleen door een ios13 systeem ondersteund', "nl-NL");
+  button.style.background = "grey";
+  button.style.cursor = "not-allowed"
 }  
 
 
@@ -54,6 +57,7 @@ function requestAccess()
           });
       }else{
         permissionGranted = false;
+        console.log('hallo')
       }
     })
     .catch(console.error);
