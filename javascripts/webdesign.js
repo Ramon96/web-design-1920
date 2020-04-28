@@ -40,7 +40,8 @@ else{
   // feedback.innerHTML = "This is not an ios13 device :(";  
   introductionMessage('Deze applicatie word alleen door een ios13 systeem ondersteund', "nl-NL");
   button.style.background = "grey";
-  button.style.cursor = "not-allowed"
+  button.style.cursor = "not-allowed";
+  button.innerHTML = "Only supports iOS13 devices"
 }  
 
 
