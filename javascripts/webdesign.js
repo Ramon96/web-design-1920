@@ -31,6 +31,8 @@ if (typeof (DeviceOrientationEvent) !== 'undefined' && typeof (DeviceOrientation
       permissionGranted = true;
       window.addEventListener('deviceorientation', function (event) {
         // feedback.innerHTML = event.alpha + ' : ' + event.beta + ' : ' + event.gamma;
+        // gebeurt het niet hier?
+        alert('ik kom in the then')
         deviceRotation(event);
       });
     })
