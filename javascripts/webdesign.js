@@ -15,7 +15,7 @@ let maxRows = document.getElementsByTagName("tbody")[0].children.length - 1;
 
 if(typeof(DeviceOrientationEvent) !== 'undefined' && typeof(DeviceOrientationEvent.requestPermission) === 'function'){
     //ios 13 device
-      
+      introductionMessage("Druk op uw scherm en vervolgends op toestaan om de applicatie toegang te geven tot uw mobiele bewegings sensoren", "nl-NL")
       DeviceOrientationEvent.requestPermission()
       .catch(() =>{
         //button die om permission vraagt
@@ -38,7 +38,9 @@ if(typeof(DeviceOrientationEvent) !== 'undefined' && typeof(DeviceOrientationEve
 else{
   //non ios 13 device
   // feedback.innerHTML = "This is not an ios13 device :(";  
-  introductionMessage('Deze applicatie word alleen door een ios13 systeem ondersteund', "nl-NL");
+  button.addEventListener('click', function(){
+    introductionMessage('Deze applicatie word alleen door een ios13 systeem ondersteund', "nl-NL");
+})
   button.style.background = "grey";
   button.style.cursor = "not-allowed";
   button.innerHTML = "Only supports iOS13 devices"
