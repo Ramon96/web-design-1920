@@ -15,11 +15,6 @@ let maxRows = document.getElementsByTagName("tbody")[0].children.length - 1;
 
 if(typeof(DeviceOrientationEvent) !== 'undefined' && typeof(DeviceOrientationEvent.requestPermission) === 'function'){
     //ios 13 device
-
-
-
-
-      //introductionMessage("Druk op uw scherm en vervolgends op toestaan om de applicatie toegang te geven tot uw mobiele bewegings sensoren", "nl-NL")
       DeviceOrientationEvent.requestPermission()
       .catch(() =>{
         //button die om permission vraagt
