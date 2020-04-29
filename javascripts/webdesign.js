@@ -23,8 +23,6 @@ if (typeof (DeviceOrientationEvent) !== 'undefined' && typeof (DeviceOrientation
         if (!permissionGranted) {
           introductionMessage('De applicatie heeft uw toestemming nodig om toegang te krijgen tot uw mobiele bewegings sensoren', "nl-NL");
           // geluid.play();
-        } else {
-          introductionMessage('uitleg', "nl-NL");
         }
       })
       throw error;
@@ -53,14 +51,17 @@ function requestAccess() {
     .then(res => {
       if (res == 'granted') {
         permissionGranted = true;
+        window.speechSynthesis.cancel();
         introductionMessage("Druk op het scherm wanneer u uitleg nodig hebt over de applicatie", "nl-NL")
-        window.addEventListener('deviceorientation', function (event) {
-          // feedback.innerHTML = event.alpha + ' : ' + event.beta + ' : ' + event.gamma;
-          deviceRotation(event);
-        });
+        window.speechSynthesis.onend = function(){
+
+          window.addEventListener('deviceorientation', function (event) {
+            // feedback.innerHTML = event.alpha + ' : ' + event.beta + ' : ' + event.gamma;
+            deviceRotation(event);
+          });
+        }
       } else {
         permissionGranted = false;
-        console.log('hallo')
       }
     })
     .catch(console.error);
