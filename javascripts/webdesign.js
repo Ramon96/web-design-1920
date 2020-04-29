@@ -181,7 +181,6 @@ function uitleg(message, locale){
   msg.pitch = 1; // 0 to 2, 1=normal
 
   msg.lang = locale; //"en-US";
-  window.speechSynthesis.speak(msg);
   msg.onend = function(e){
     alert('ik ben klaar met de uitleg')
     window.addEventListener('deviceorientation', function (event) {
@@ -189,6 +188,7 @@ function uitleg(message, locale){
       deviceRotation(event);
     });
   }
+  window.speechSynthesis.speak(msg);
 }
 
 
