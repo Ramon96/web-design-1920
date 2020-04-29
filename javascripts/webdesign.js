@@ -73,7 +73,7 @@ function deviceRotation(event) {
   feedback.innerHTML = "alpha: " + event.alpha.toFixed(0) + " gamma: " + event.gamma.toFixed(0) + " beta: " + event.beta.toFixed(0) + " oldAlpha: " + oldAlpha + " oldBeta: " + oldBeta;
   
   // roteren van scherm
-  if (event.alpha.toFixed(0) % (maxColumns / 360) == 0 && event.alpha.toFixed(0) !== oldAlpha) {
+  if (event.alpha.toFixed(0) % (360 / maxColumns) == 0 && event.alpha.toFixed(0) !== oldAlpha) {
 
     // 0 naar 360 dan?
     if (event.alpha.toFixed(0) < oldAlpha) {
