@@ -15,16 +15,25 @@ let maxRows = document.getElementsByTagName("tbody")[0].children.length - 1;
 
 if(typeof(DeviceOrientationEvent) !== 'undefined' && typeof(DeviceOrientationEvent.requestPermission) === 'function'){
     //ios 13 device
-      introductionMessage("Druk op uw scherm en vervolgends op toestaan om de applicatie toegang te geven tot uw mobiele bewegings sensoren", "nl-NL")
+
+
+
+
+      //introductionMessage("Druk op uw scherm en vervolgends op toestaan om de applicatie toegang te geven tot uw mobiele bewegings sensoren", "nl-NL")
       DeviceOrientationEvent.requestPermission()
       .catch(() =>{
         //button die om permission vraagt
+        if(!permissionGranted){
         button.addEventListener('click', function(){
             requestAccess();
-            introductionMessage('Leg uw mobiele telefoon plat op tafel en roteer je telefoon om links en rechts in de tabel te gaan. kantel je telefoon om omhoog en omlaag in de tabel te gaan.', "nl-NL");
+            introductionMessage('De applicatie heeft uw toestemming nodig om toegang te krijgen tot uw mobiele bewegings sensoren', "nl-NL");
             // geluid.play();
         })
+      }
+      else{
+        introductionMessage('uitleg', "nl-NL");
 
+      }
       throw error;
       })
       .then(()=>{
@@ -53,7 +62,7 @@ function requestAccess()
     .then(res => {
       if(res == 'granted'){
         permissionGranted = true;
-        
+        introductionMessage("Druk op het scherm wanneer u uitleg nodig hebt over de applicatie", "nl-NL")
         window.addEventListener('deviceorientation', function(event) {
             // feedback.innerHTML = event.alpha + ' : ' + event.beta + ' : ' + event.gamma;
             deviceRotation(event);
