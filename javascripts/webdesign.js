@@ -171,7 +171,9 @@ function introductionMessage(message, locale) {
 
 function uitleg(message, locale){
   var msg = new SpeechSynthesisUtterance(message);
-
+  window.removeEventListener('deviceorientation', function(event){
+    deviceRotation(event);
+  })
   msg.text = message;
   msg.volume = 1; // 0 to 1
 
