@@ -183,7 +183,6 @@ function uitleg(message, locale){
 
   msg.lang = locale; //"en-US";
   msg.onend = function(e){
-    alert('ik ben klaar met de uitleg')
     window.addEventListener('deviceorientation', function (event) {
       // feedback.innerHTML = event.alpha + ' : ' + event.beta + ' : ' + event.gamma;
       deviceRotation(event);
