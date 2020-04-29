@@ -19,6 +19,7 @@ if (typeof (DeviceOrientationEvent) !== 'undefined' && typeof (DeviceOrientation
     .catch(() => {
       //button die om permission vraagt
       button.addEventListener('click', function () {
+        window.speechSynthesis.cancel();
         requestAccess();
         if (!permissionGranted) {
           introductionMessage('De applicatie heeft uw toestemming nodig om toegang te krijgen tot uw mobiele bewegings sensoren', "nl-NL");
