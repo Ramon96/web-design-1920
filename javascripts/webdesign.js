@@ -28,11 +28,11 @@ if (typeof (DeviceOrientationEvent) !== 'undefined' && typeof (DeviceOrientation
       throw error;
     })
     .then(() => {
+      // Hier kom je als je de browser refreshed
+
       permissionGranted = true;
       window.addEventListener('deviceorientation', function (event) {
         // feedback.innerHTML = event.alpha + ' : ' + event.beta + ' : ' + event.gamma;
-        // gebeurt het niet hier?
-        alert('ik kom in the then')
         deviceRotation(event);
       });
     })
@@ -183,6 +183,7 @@ function uitleg(message, locale){
   msg.lang = locale; //"en-US";
   window.speechSynthesis.speak(msg);
   msg.onend = function(e){
+    alert('ik ben klaar met de uitleg')
     window.addEventListener('deviceorientation', function (event) {
       // feedback.innerHTML = event.alpha + ' : ' + event.beta + ' : ' + event.gamma;
       deviceRotation(event);
