@@ -4,7 +4,7 @@ let button = document.querySelector("#permissionButton");
 
 let geluid = document.getElementById('myAudio');
 let oldAlpha = 360;
-
+let oldBeta = 0;
 
 let columnPos = 0;
 let maxColumns = document.getElementsByTagName("tr")[1].children.length - 1;
@@ -73,7 +73,7 @@ function deviceRotation(event) {
   feedback.innerHTML = "alpha: " + event.alpha.toFixed(0) + " gamma: " + event.gamma.toFixed(0) + " beta: " + event.beta.toFixed(0) + " oldAlpha: " + oldAlpha + " oldBeta: " + oldBeta;
   
   // roteren van scherm
-  if (event.alpha.toFixed(0) % maxColumns == 0 && event.alpha.toFixed(0) !== oldAlpha) {
+  if (event.alpha.toFixed(0) % (maxColumns / 360) == 0 && event.alpha.toFixed(0) !== oldAlpha) {
 
     // 0 naar 360 dan?
     if (event.alpha.toFixed(0) < oldAlpha) {
@@ -118,7 +118,7 @@ function deviceRotation(event) {
   // console.log(oldAlpha)
 
 }
-let oldBeta = 0;
+
 // document.getElementsByTagName("tr")[2].children[2].focus();
 
 console.log(document.getElementsByTagName("tr")[1].children[2].innerHTML)
