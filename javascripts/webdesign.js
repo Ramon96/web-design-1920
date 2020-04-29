@@ -67,26 +67,13 @@ function requestAccess() {
 }
 
 function deviceRotation(event) {
-
   //alpha beta gamma
 
+  //Debug regel
   feedback.innerHTML = "alpha: " + event.alpha.toFixed(0) + " gamma: " + event.gamma.toFixed(0) + " beta: " + event.beta.toFixed(0) + " oldAlpha: " + oldAlpha + " oldBeta: " + oldBeta;
-
-  /*if(event.alpha.toFixed(0) % 5 == 0 && event.alpha.toFixed(0) !== oldAlpha){
-    
-    oldAlpha = event.alpha.toFixed(0);
-    //    console.log(event.alpha.toFixed(0) % 5);
-    window.speechSynthesis.cancel();
-    playMessage(oldAlpha, "nl-NL");
-
-      //  geluid.play();
-
-      //  geluid.onended = function() {
-      //   geluid.pause();
-      //   geluid.currentTime = 0; 
-    // };
-  }*/
-  if (event.alpha.toFixed(0) % 10 == 0 && event.alpha.toFixed(0) !== oldAlpha) {
+  
+  // roteren van scherm
+  if (event.alpha.toFixed(0) % maxColumns == 0 && event.alpha.toFixed(0) !== oldAlpha) {
 
     // 0 naar 360 dan?
     if (event.alpha.toFixed(0) < oldAlpha) {
@@ -107,16 +94,12 @@ function deviceRotation(event) {
 
   if (event.beta.toFixed(0) <= -10 && oldBeta == 0) {
     // omhoog
-
     oldBeta = 1;
 
     rowPos -= 1;
     if (rowPos <= 0) {
       rowPos = maxRows;
     }
-
-
-
     focusTable();
   } else if (event.beta.toFixed(0) >= 10 && oldBeta == 0) {
     // omlaag
@@ -126,9 +109,6 @@ function deviceRotation(event) {
     if (rowPos > maxRows) {
       rowPos = 1;
     }
-
-
-
     focusTable();
   } else if (event.beta.toFixed(0) >= 0 && event.beta.toFixed(0) <= 3) {
     oldBeta = 0;
@@ -170,8 +150,8 @@ function introductionMessage(message, locale) {
 }
 
 function uitleg(message, locale){
-  window.speechSynthesis.cancel();
   var msg = new SpeechSynthesisUtterance(message);
+  // dit lijkt niet te werken
   window.removeEventListener('deviceorientation', function(event){
     deviceRotation(event);
   })
