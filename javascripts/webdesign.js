@@ -51,15 +51,16 @@ function requestAccess() {
     .then(res => {
       if (res == 'granted') {
         permissionGranted = true;
+        button.innerHTML = "Uitleg"; 
         window.speechSynthesis.cancel();
-        introductionMessage("Druk op het scherm wanneer u uitleg nodig hebt over de applicatie", "nl-NL")
-        window.speechSynthesis.onend = function(){
+        introductionMessage("Leg uw telefoon plat draai uw scherm om naar links en rechts te gaan, kantel uw telefoon om onhoog en omlaag te gaan.", "nl-NL")
+
 
           window.addEventListener('deviceorientation', function (event) {
             // feedback.innerHTML = event.alpha + ' : ' + event.beta + ' : ' + event.gamma;
             deviceRotation(event);
           });
-        }
+        
       } else {
         permissionGranted = false;
       }
