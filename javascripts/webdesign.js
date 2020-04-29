@@ -170,6 +170,7 @@ function introductionMessage(message, locale) {
 }
 
 function uitleg(message, locale){
+  window.speechSynthesis.cancel();
   var msg = new SpeechSynthesisUtterance(message);
   window.removeEventListener('deviceorientation', function(event){
     deviceRotation(event);
