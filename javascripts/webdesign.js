@@ -54,7 +54,6 @@ function requestAccess() {
       if (res == 'granted') {
         permissionGranted = true;
         button.innerHTML = "Uitleg"; 
-        window.speechSynthesis.cancel();
         uitleg("Leg uw telefoon plat op tavel. Draai uw scherm om naar links en rechts te gaan. Kantel uw telefoon om onhoog en omlaag te gaan.", "nl-NL")
 
           // dit moet alleen kunnen als de intro klaar is met spreken
