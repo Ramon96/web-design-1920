@@ -19,6 +19,11 @@ navigeer in het project
 cd web-design-1920
 `
 
+## Bekende problemen
+- [ ] Uitleg word onderbroken wanneer je je telefoon kantelt
+- [ ] Refreshen zorgt ervoor dat spraak ophoudt met werken
+- [ ] Problemen tegen de klok indraaien vanaf 360 graden
+
 ## User scenario 
 
 Frank is 49 jaar en komt net van het ziekenhuis. Frank met het centrale punt van zijn ogen niet meer zien. Hij heeft net van het ziekenhuis te horen gekregen dat hij binnenkort helemaal niets meer kan zien. 
