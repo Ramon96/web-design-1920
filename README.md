@@ -161,3 +161,13 @@ Tijdens het testen schreef ik op wat mij opviel aan Roger waardoor ik het design
 
 ### Add nonsense
 Wanneer Roger veel aan zijn telefoon draait, zegt de applicatie dat hij duizelig word van hem. Ook heb ik de pitch van de spreker zijn stem gebasseerd op de waardes waar hij op staat, waardoor de stem heel hoog en heel laag kan gaan. 
+
+
+## Grote conclussie
+Ik vond het ontzettend leuk om voor Roger te mogen ontwerpen. Roger geloofde er oprecht in dat het web misschien niet iets voor hem is en hij stond op het punt om te geven, maar om ons zo aan het werk te zien zie je weer een vonk in zijn ogen. Hij vind het oprecht leuk om te zien wat wij allemaal wel niet weten te bedenken. 
+
+Roger is dan wel iemand die slecht ziend is, maar de normale ontwerper zal dan doen wat hem geleerd is want als je screenreader support  toevoegd dan is het toch prima? Nou ik heb tijdens vak geleerd dat dat niet altijd het geval is want in Roger zijn situatie moet hij nog leren om met deze technologie om te gaan, er zijn zoveel verschillende screenreaders en allemaal handelen ze het web net wat anders aan. Roger is op leeftijd en nieuwe technieken aanleren is net wast lastiger voor hem. 
+
+Door snel prototypens te maken kan ik zien hoe Roger ermee omgaat, ik kan zien waar Roger struikeld en waarom hij juist precies daarover struikeld. Ik kan heel gericht oplossingen bedenken voor zijn probleem, maar nog belangrijker is dat ik kan zien wat hij ervan vind. Ik kan zien wanneer hij lacht en het naar zijn z'n heeft en ik kan zien wanneer het hem net allemaal een beetje vervelend word.
+
+Ik had in het begin moeite om iets te bedenken wat bij Roger zou passen, maar door juist alle conventie's uit het raam te goeien ging ik vanuit andere invalshoeken denken waardoor ik met een ontwerp kon komen wat Roger ontzettend leuk vind!
