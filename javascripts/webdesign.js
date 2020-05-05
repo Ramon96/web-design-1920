@@ -198,8 +198,12 @@ function playMessage(message, locale) {
 
   msg.rate = 1; // 0.1 to 9
 
-  msg.pitch = 1; // 0 to 2, 1=normal
+  msg.pitch = 2 * normalize(value , 173 , 24); // 0 to 2, 1=normal
 
   msg.lang = locale; //"en-US";
   window.speechSynthesis.speak(msg);
+}
+
+function normalize(val, max, min){
+  return (val - min) / (max - min)
 }
