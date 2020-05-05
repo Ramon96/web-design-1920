@@ -148,7 +148,11 @@ Tijdens deze opdracht hebben we een ontzettend grote luxe, we mogen namelijk voo
 
 Ik heb ook in gedachte gehouden dat Roger een beeldhouwer geweest is, dus ik weet dat Roger niet bang is om met zijn handen te bewegen. Daarom kwam ik op het idee om bewegings sensoren van zijn mobiele telefoon te gebruiken.
 
+Het viel me aan Roger op dat Roger het lastig vind om te vinden wat hij moet doen als hij teveel op het scherm ziet gebeuren. 
+Daarom heb ik 1 knop in mijn design die doet wat roger mogeljk nodig zal hebben.
+
 Tijdens het testen schreef ik op wat mij opviel aan Roger waardoor ik het design meer op Roger kon laten richten.
+
 
 ### Add nonsense
 Wanneer Roger veel aan zijn telefoon draait, zegt de applicatie dat hij duizelig word van hem. Ook heb ik de pitch van de spreker zijn stem gebasseerd op de waardes waar hij op staat, waardoor de stem heel hoog en heel laag kan gaan. 
