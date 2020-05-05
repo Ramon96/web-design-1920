@@ -80,7 +80,7 @@ Terwijl Roger mijn prototypen aan het testen was begonnen de buren te klussen. E
 
 Verder zag ik dat Roger het wel leuk vond om te zien dat ik out of the box had nagedacht en dat hij best benieuwd was wat hier verder uit zou komen.
 
-### Conclussie:
+### Conclusie:
 Bewegen met de telefoon vond hij leuk, hij vond het leuk dat ik vanuit het perspectief van een beeldhouder heb gedacht (werken met handen). Geluid als terugkoppeling werkt niet zo goed, als de buren aan het klussen zijn kan Roger de applicatie niet gebruiken.
 
 Ik had nog gekeken of het mogelijk om geluid te vervangen met trillen maar word dat helaas niet goed ondersteund: https://caniuse.com/#feat=vibration. En heb ik in tegenstelling tot koen geen extra Android in huis liggen. Ik beschouw dit dan ook als een Con en ga hier niet omheen proberen te ontwerpen. (Roger zou in theorie ook een koptelefoon kunnen gebruiken)
@@ -104,7 +104,7 @@ Na het leuke koetjes en kalfjes fase ga ik over naar de "Recap". Ik vertel Roger
 
 Wanneer Roger ergens niet uitkomt vraag ik Roger wat hij denkt wat er van hem gevraagd word. Ik moedig hem aan om hem hardop te denken wat mij veel interessante aandachtspunten opleverde. 
 
-### Conclussie. 
+### Conclusie. 
 - Roger kwam er in het begin niet helemaal uit, er was in mijn applicatie nog geen duidelijke flow.
 - Ik heb toestemming nodig om de gyroscopen te kunnen gebruiken dat doe ik door middel van een allow button, deze button was nog niet helemaal duidelijk.
 - De applicatie werkt ook niet helemaal soepel voor terugkomende bezoekers.
@@ -163,7 +163,7 @@ Tijdens het testen schreef ik op wat mij opviel aan Roger waardoor ik het design
 Wanneer Roger veel aan zijn telefoon draait, zegt de applicatie dat hij duizelig word van hem. Ook heb ik de pitch van de spreker zijn stem gebasseerd op de waardes waar hij op staat, waardoor de stem heel hoog en heel laag kan gaan. 
 
 
-## Grote conclussie
+## Grote conclusie
 Ik vond het ontzettend leuk om voor Roger te mogen ontwerpen. Roger geloofde er oprecht in dat het web misschien niet iets voor hem is en hij stond op het punt om te geven, maar om ons zo aan het werk te zien zie je weer een vonk in zijn ogen. Hij vind het oprecht leuk om te zien wat wij allemaal wel niet weten te bedenken. 
 
 Roger is dan wel iemand die slecht ziend is, maar de normale ontwerper zal dan doen wat hem geleerd is want als je screenreader support  toevoegd dan is het toch prima? Nou ik heb tijdens vak geleerd dat dat niet altijd het geval is want in Roger zijn situatie moet hij nog leren om met deze technologie om te gaan, er zijn zoveel verschillende screenreaders en allemaal handelen ze het web net wat anders aan. Roger is op leeftijd en nieuwe technieken aanleren is net wast lastiger voor hem. 
