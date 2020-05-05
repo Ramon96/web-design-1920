@@ -22,7 +22,10 @@ cd web-design-1920
 ## Bekende problemen
 - [ ] Uitleg word onderbroken wanneer je je telefoon kantelt
 - [ ] Refreshen zorgt ervoor dat spraak ophoudt met werken
-- [ ] Problemen tegen de klok indraaien vanaf 360 graden
+- [ ] Problemen tegen de klok indraaien vanaf 360 graden (Omdat hij dan van 360 naar 0 springt)
+
+## Gebruikte bronnen 
+ - databron: https://klimaatmonitor.databank.nl/dashboard/hernieuwbare-energie
 
 ## User scenario 
 
