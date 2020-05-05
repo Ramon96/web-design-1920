@@ -11,6 +11,8 @@ let maxColumns = document.getElementsByTagName("tr")[1].children.length - 1;
 let rowPos = 1;
 let maxRows = document.getElementsByTagName("tbody")[0].children.length - 1;
 
+let joke = false;
+
 
 
 if (typeof (DeviceOrientationEvent) !== 'undefined' && typeof (DeviceOrientationEvent.requestPermission) === 'function') {
@@ -56,10 +58,7 @@ function requestAccess() {
         permissionGranted = true;
         button.innerHTML = "Uitleg"; 
         uitleg("Leg uw telefoon plat op tavel. Draai uw scherm om naar links en rechts te gaan. Kantel uw telefoon om onhoog en omlaag te gaan. De tabel gaat over bekende Nieuwbare Energie, bron Rijkswaterstaat", "nl-NL")
-
-          // dit moet alleen kunnen als de intro klaar is met spreken
-
-        
+          // dit moet alleen kunnen als de intro klaar is met spreken    
       } else {
         permissionGranted = false;
       }
@@ -89,8 +88,18 @@ function deviceRotation(event) {
         columnPos = maxColumns;
       }
     }
+
+
     oldAlpha = event.alpha.toFixed(0);
     focusTable();
+
+    if(!joke){
+      let rng = Math.floor(Math.random() * 10)
+
+      if(rng == 10){
+        uitleg("Roger ik word een beetje duizelig van al dat gedraai", "nl-NL")
+      }
+    }
   }
 
   if (event.beta.toFixed(0) <= -10 && oldBeta == 0) {
@@ -133,10 +142,10 @@ function focusTable() {
   document.getElementsByTagName("tr")[rowPos].children[columnPos].focus();
   window.speechSynthesis.cancel();
   playMessage(document.getElementsByTagName("tr")[rowPos].children[columnPos].innerHTML, "nl-NL");
+
 }
 
 function introductionMessage(message, locale) {
-
   var msg = new SpeechSynthesisUtterance(message);
 
   msg.text = message;
@@ -175,7 +184,6 @@ function uitleg(message, locale){
 
 
 function playMessage(message, locale) {
-
   let value = document.getElementsByTagName("tr")[0].children[columnPos].innerHTML;
   let rowVal = document.getElementsByTagName("tr")[rowPos].children[0].innerHTML
   let spreek = rowVal + " " + value + " " + message
