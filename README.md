@@ -1,6 +1,8 @@
 # Onzichtbare datavisualisatie
 Rapid prototypen en testen met echte mensen.
 
+![prototype scherm](https://github.com/Ramon96/web-design-1920/blob/master/readme-sources/scherm.jpg?raw=true)
+
 ## Live demo 
 [https://webdesign-ramon.netlify.app/](https://webdesign-ramon.netlify.app/) (Ios13 Iphone demo)
 
