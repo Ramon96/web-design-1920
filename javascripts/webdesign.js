@@ -94,7 +94,8 @@ function deviceRotation(event) {
     focusTable();
 
     if(!joke){
-      let rng = Math.floor(Math.random() * 10)
+      // let rng = Math.floor(Math.random() * 9)
+      let rng = 10
 
       if(rng == 10){
         uitleg("Roger ik word een beetje duizelig van al dat gedraai", "nl-NL")
