@@ -36,6 +36,7 @@ Er is momenteel Corona in Nederland. Frank volgt de stand van zaken door naar co
 Het valt frank op dat het heel moeilijk is omdoormiddel van een screenreader door het web te navigeren, niet alle website zijn op zijn screenreader geoptimalizeerd. Op zijn mobiele telefoon gebruikt Frank Siri om spraak aan en uit te zetten en kan hij zijn mobiele telefoon daardoor nog bedienen.
 
 Gelukkig kan Frank doormiddel van een onzichtbare datavisualisatie nog steeds op de hoogte blijven van de laatste corona cijfers.
+Frank kan de onzichtbare datavisualisatie gebruiken door zijn mobiele telefoon te draaien en te kantelen. Frank hoeft daarom niet meteen handig te zijn met een screenreader.
 
 
 ## De ontmoeting met Roger Ravelli
