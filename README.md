@@ -113,10 +113,50 @@ Al met al vond Roger het prachtig om te zien, het is even wat anders dan de scre
 Ik merk dat deze manier van testen veel effectiever is in vergelijking met mijn eerste test. Ik leer tijdens dit vak over exclusive design, maar ik leer ook hoe je moet testen. En dat laatste is misschien wel het meest nuttig, omdat je dat in elke situatie kan toepassen om je concept te versterken.
 
 ## De laatste iteratie
+De meeste problemen die ik in mijn laastste test had kan ik oplossen door een flow te creeeren in mijn app. 
+Er is niet veel flow nodig naar mijn mening, want het belangrijkste onderdeel is dat je lekker met je telefoon kan draaien en kantlen.
 
+Ik ben dus voor een 1 button design gegaan.
+Dit het scherm een schermvullend knop heeft. Als Roger hierop klikt word er uitgelegd dat de applicatie toestemming heeft tot de bewegingssensoren. 
+
+Als Roger dit toestaat veranderd de knop naar een uitleg knop, dus wanneer Roger het scherm aanraakt word er uitgelegd hoe je door de tabel kan gaan, wat voor dataset er gebruikt is en van wie deze data set is. 
+
+Ook heb ik de gevoeligheid dynamisch op het aantal tabel items gemaakt. 
+
+Om het af te maken heb ik ook nog wat nonsense toegevoegd.
+wanneer Roger zijn scherm draaid is er een 1 op 10 kans dat er een joke verteld word.
+Zo kan het programma zeggen: Roger van al dat gedraai word ik een beetje duizelig.
+Deze grap word natuurlijk maar 1x per sessie gemaakt, anders word het een beetje vervelend.
+
+Ook verander de pitch van de stem op basis van de waarde. Toen ik dit uitprobeerde moest ik meteen lachen dus ik denk dat Roger dit ook wel een leuke grap zal vinden.
 
 ## Exclusive Design Principles
+Tijdens het vak Web Design hebben we 4 Design principles gekregen die we kunnen toepassen aan ons concept. 
+Nog precieser, het gaat over exclusive design. 
+Deze 4 gouden regels die opgezet zijn door Vasilis van Gemert zijn er om mij te helpen bij het ontwerpen voor een leuke maar ook zinvolle ervaring voor Roger.
+
 ### Study situation
+Ik heb een user scenario opgezet om mij proberen in te beelden in Roger. 
+De situatie van Roger is dat hij zijn zicht verliest en dat hij nog moet leren om met screen assistances te werken. 
+
+Daarom lijkt het mij een goed idee om iets te maken waarvoor Roger niet iets nieuws hoeft te leren.
+
 ### Ignore conventions
+Deze Design principle heeft mij denk ik het meest geholpen. Het is makkelijk om te denken binnen de scope van een screenreader. 
+Doordat ik juist lost liet van alle conventies ging ik meer denken in de zin van:
+Wat voor sensoren zijn er tot me beschikking? 
+Op welke manieren kan de gebruiker nog meer interacteren?
+Wat als de gebruiker geen toetsenbord of muis zou hebben?
+
 ### Prioritise identity
+Tijdens deze opdracht hebben we een ontzettend grote luxe, we mogen namelijk voor een specifiek persoon ontwerpen.
+En ik pak dan ook meteen uit.
+Ik maak gebruik van het feit dat hij een telefoon heeft, mijn applicatie werkt precies voor Roger zijn operating.
+
+Ik heb ook in gedachten gehouden dat Roger een beeldhouder geweest is, dus ik weet dat Roger niet bang is om met zijn handen te bewegen. Daarom kwam ik op het idee om bewegings sensoren van zijn mobiele telefoon te gebruiken.
+
+Tijdens het testen schreef ik op wat mij opviel aan Roger waardoor ik het design meer op Roger kon laten richten. 
+
 ### Add nonsense
+Wanneer Roger veel aan zijn telefoon draaid zegt de applicatie dat hij duizelig word van hem. 
+Ook heb ik de de pitch van de spreker zijn stem gebaseerd op de waarde's waar hij op staat waardoor de stem heel hoog en heel laag kan gaan.
