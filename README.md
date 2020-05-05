@@ -131,32 +131,23 @@ Deze grap word natuurlijk maar 1x per sessie gemaakt, anders word het een beetje
 Ook verander de pitch van de stem op basis van de waarde. Toen ik dit uitprobeerde moest ik meteen lachen dus ik denk dat Roger dit ook wel een leuke grap zal vinden.
 
 ## Exclusive Design Principles
-Tijdens het vak Web Design hebben we 4 Design principles gekregen die we kunnen toepassen aan ons concept. 
-Nog precieser, het gaat over exclusive design. 
-Deze 4 gouden regels die opgezet zijn door Vasilis van Gemert zijn er om mij te helpen bij het ontwerpen voor een leuke maar ook zinvolle ervaring voor Roger.
+Tijdens het vak Web Design hebben we 4 Design principles gekregen die we kunnen toepassen op ons concept. Nog preciezer, het gaat over exclusive design. Deze 4 gouden regels die opgezet zijn door Vasilis van Gemert zijn er om mij te helpen bij het ontwerpen voor een leuke maar ook zinvolle ervaring voor Roger.
 
 ### Study situation
-Ik heb een user scenario opgezet om mij proberen in te beelden in Roger. 
-De situatie van Roger is dat hij zijn zicht verliest en dat hij nog moet leren om met screen assistances te werken. 
+Ik heb een user scenario opgezet om mij proberen in te leven in Roger. De situatie van Roger is dat hij zijn zicht verliest en dat hij nog moet leren om met screen assistances te werken.
 
 Daarom lijkt het mij een goed idee om iets te maken waarvoor Roger niet iets nieuws hoeft te leren.
+Dit heb ik gedaan door interactie's te maken die voor roger makkelijk te begrijpen is.
 
 ### Ignore conventions
-Deze Design principle heeft mij denk ik het meest geholpen. Het is makkelijk om te denken binnen de scope van een screenreader. 
-Doordat ik juist lost liet van alle conventies ging ik meer denken in de zin van:
-Wat voor sensoren zijn er tot me beschikking? 
-Op welke manieren kan de gebruiker nog meer interacteren?
-Wat als de gebruiker geen toetsenbord of muis zou hebben?
+Deze Design principle heeft mij denk ik het meest geholpen. Het is makkelijk om te denken binnen de scope van een screenreader. Doordat ik juist los liet van alle conventies ging ik meer denken in de zin van: Wat voor sensoren zijn er tot me beschikking? Op welke manieren kan de gebruiker nog meer interacteren? Wat als de gebruiker geen toetsenbord of muis zou hebben?
 
 ### Prioritise identity
-Tijdens deze opdracht hebben we een ontzettend grote luxe, we mogen namelijk voor een specifiek persoon ontwerpen.
-En ik pak dan ook meteen uit.
-Ik maak gebruik van het feit dat hij een telefoon heeft, mijn applicatie werkt precies voor Roger zijn operating.
+Tijdens deze opdracht hebben we een ontzettend grote luxe, we mogen namelijk voor een specifiek persoon ontwerpen. En ik pak dan ook meteen uit. Ik maak gebruik van het feit dat hij een telefoon heeft, mijn applicatie werkt precies voor Roger zijn operating.
 
-Ik heb ook in gedachten gehouden dat Roger een beeldhouder geweest is, dus ik weet dat Roger niet bang is om met zijn handen te bewegen. Daarom kwam ik op het idee om bewegings sensoren van zijn mobiele telefoon te gebruiken.
+Ik heb ook in gedachte gehouden dat Roger een beeldhouwer geweest is, dus ik weet dat Roger niet bang is om met zijn handen te bewegen. Daarom kwam ik op het idee om bewegings sensoren van zijn mobiele telefoon te gebruiken.
 
-Tijdens het testen schreef ik op wat mij opviel aan Roger waardoor ik het design meer op Roger kon laten richten. 
+Tijdens het testen schreef ik op wat mij opviel aan Roger waardoor ik het design meer op Roger kon laten richten.
 
 ### Add nonsense
-Wanneer Roger veel aan zijn telefoon draaid zegt de applicatie dat hij duizelig word van hem. 
-Ook heb ik de de pitch van de spreker zijn stem gebaseerd op de waarde's waar hij op staat waardoor de stem heel hoog en heel laag kan gaan.
+Wanneer Roger veel aan zijn telefoon draait, zegt de applicatie dat hij duizelig word van hem. Ook heb ik de pitch van de spreker zijn stem gebasseerd op de waardes waar hij op staat, waardoor de stem heel hoog en heel laag kan gaan. 
