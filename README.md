@@ -1,7 +1,6 @@
 # Onzichtbare datavisualisatie
 Rapid prototypen en testen met echte mensen.
 
-![prototype scherm](https://github.com/Ramon96/web-design-1920/blob/master/readme-sources/scherm.jpg?raw=true)
 
 ## Live demo 
 [https://webdesign-ramon.netlify.app/](https://webdesign-ramon.netlify.app/) (Ios13 Iphone demo)
@@ -94,6 +93,8 @@ De volgende stap is dat ik een tabel zou kunnen bedienen door middel van sensore
 
 Om het helemaal af te ronden worden de cellen voorgelezen en heb ik een introductie text toegevoegd die uitleg geeft.
 
+![iteratie](https://github.com/Ramon96/web-design-1920/blob/master/readme-sources/asdf.png?raw=true)
+
 ### De test
 Deze keer doe ik de test net wat anders. Ik wil de kennis toepassen die ik in het college heb gekregen. 
 Ik was als een van de laatste aan de beurt en ik kon me goed voorstellen dat Roger er ook een beetje doorheen zat. Ik vraag hem daarom gewoon: Hoe gaat het? Heb je otnwerpen gezien de je leuk vond? 
@@ -132,6 +133,8 @@ Zo kan het programma zeggen: Roger van al dat gedraai word ik een beetje duizeli
 Deze grap word natuurlijk maar 1x per sessie gemaakt, anders word het een beetje vervelend.
 
 Ook verander de pitch van de stem op basis van de waarde. Toen ik dit uitprobeerde moest ik meteen lachen dus ik denk dat Roger dit ook wel een leuke grap zal vinden.
+
+![prototype scherm](https://github.com/Ramon96/web-design-1920/blob/master/readme-sources/scherm.jpg?raw=true)
 
 ## Exclusive Design Principles
 Tijdens het vak Web Design hebben we 4 Design principles gekregen die we kunnen toepassen op ons concept. Nog preciezer, het gaat over exclusive design. Deze 4 gouden regels die opgezet zijn door Vasilis van Gemert zijn er om mij te helpen bij het ontwerpen voor een leuke maar ook zinvolle ervaring voor Roger.
